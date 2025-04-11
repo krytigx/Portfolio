@@ -56,8 +56,6 @@ export default function HomePage() {
         </div>
       </section>
     </div>
-  );
-}
 
       <section className="py-16">
         <div className="flex justify-between items-center mb-10">
