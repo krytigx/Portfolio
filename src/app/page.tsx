@@ -5,18 +5,10 @@ import { ExternalLink } from "lucide-react";
 export default function HomePage() {
   return (
     <div className="container mx-auto px-5 md:px-10">
-  <section className="pb-16 pt-10 md:pt-20 md:pb-32">
-    <div className="flex flex-col md:flex-row gap-8">
+      <section className="pb-16 pt-10 md:pt-20 md:pb-32">
+        <div className="flex flex-col md:flex-row gap-8">
       
-      {/* Photo Section */}
-      <div className="w-full md:w-1/3">
-        <img
-          src="https://raw.githubusercontent.com/krytigx/Portfolio_images/refs/heads/main/555_timer.jpg"
-          
-          alt="Tejas Garg"
-          className="rounded-2xl shadow-lg object-cover w-full h-auto"
-        />
-      </div>
+      
 
       {/* Text Section */}
       <div className="w-full md:w-2/3 flex flex-col justify-center">
@@ -32,6 +24,15 @@ export default function HomePage() {
             <ExternalLink className="ml-1 h-3 w-3" />
           </Link>
         </div>
+        {/* Photo Section */}
+      <div className="w-full md:w-1/3">
+        <img
+          src="https://raw.githubusercontent.com/krytigx/Portfolio_images/refs/heads/main/555_timer.jpg"
+          
+          alt="Tejas Garg"
+          className="rounded-2xl shadow-lg object-cover w-full h-auto"
+        />
+      </div>
         <p className="text-lg md:text-xl leading-relaxed">
           Hello, I'm a freelancer specializing in minimal design with 10 years of expertise — based in Tokyo, working remote. Let's create!
         </p>
