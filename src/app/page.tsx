@@ -1,35 +1,63 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
     <div className="container mx-auto px-5 md:px-10">
       <section className="pb-16 pt-10 md:pt-20 md:pb-32">
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-full md:w-2/3">
-            <h1 className="mb-4">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+
+          {/* Left Side: Name and Email */}
+          <div className="flex-1">
+            {/* Name: Slide from Top */}
+            <motion.h1
+              className="text-7xl md:text-[120px] font-extrabold leading-none mb-6"
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
               TEJAS<br />GARG
-            </h1>
-            <div className="mb-4">
+            </motion.h1>
+
+            {/* Email: Slide from Left */}
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            >
               <Link
                 href="mailto:tejasgarg421@gmail.com"
-                className="text-sm opacity-70 hover:opacity-100 transition-opacity flex items-center"
+                className="text-base opacity-80 hover:opacity-100 transition-opacity flex items-center"
               >
                 tejasgarg421@gmail.com
-                <ExternalLink className="ml-1 h-3 w-3" />
+                <ExternalLink className="ml-1 h-4 w-4" />
               </Link>
-            </div>
+            </motion.div>
           </div>
-          <div className="w-full md:w-1/3">
-            <p className="text-lg md:text-xl leading-relaxed">
+
+          {/* Right Side: Image and Description */}
+          <motion.div
+            className="flex flex-col items-end gap-6 md:w-1/3"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+          >
+            <img
+              src="https://raw.githubusercontent.com/krytigx/Portfolio_images/refs/heads/main/place_holder.jpg"
+              alt="Tejas Garg"
+              className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover"
+            />
+            <p className="text-right text-lg md:text-xl leading-relaxed max-w-sm">
               Hello, I'm a freelancer specializing in minimal design with 10 years of expertise — based in Tokyo, working remote. Let's create!
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
-
-
+    </div>
+  );
+}
 
       <section className="py-16">
         <div className="flex justify-between items-center mb-10">
