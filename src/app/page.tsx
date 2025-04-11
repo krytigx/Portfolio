@@ -24,7 +24,9 @@ export default function HomePage() {
             <ExternalLink className="ml-1 h-3 w-3" />
           </Link>
         </div>
-        {/* Photo Section */}
+        
+      </div>
+      {/* Photo Section */}
       <div className="w-full md:w-1/3">
         <img
           src="https://raw.githubusercontent.com/krytigx/Portfolio_images/refs/heads/main/555_timer.jpg"
@@ -36,8 +38,6 @@ export default function HomePage() {
         <p className="text-lg md:text-xl leading-relaxed">
           Hello, I'm a freelancer specializing in minimal design with 10 years of expertise — based in Tokyo, working remote. Let's create!
         </p>
-      </div>
-      
     </div>
   </section>
 
