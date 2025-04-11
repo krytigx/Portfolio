@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export default function VioletOrbitPage() {
+export default function ProjectDetailPage() {
   return (
     <div className="container mx-auto px-5 md:px-10">
       <section className="pb-16 pt-10 md:pt-20 md:pb-32">
