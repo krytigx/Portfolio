@@ -12,8 +12,8 @@ export default function HomePage() {
 
       {/* Text Section */}
       <div className="w-full md:w-2/3 flex flex-col justify-center">
-        <h1 className="mb-4">
-          TEJAS<br />GARG
+        <h1 className="mb-4" text-5xl font-bold">
+          KRITIG<br />GARG
         </h1>
         <div className="mb-4">
           <Link
